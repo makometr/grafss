@@ -16,44 +16,6 @@
 // Задание - сделать класс граф с использованием паттерна мост (с двумя реализациями).
 // Затем какой-нибудь порождающий паттерн.
 
-
-class GrafImplementator {
-public:
-    virtual EdgesList getUnifiedRepr() const = 0;
-    virtual ~GrafImplementator() = default;
-};
-
-class Graf {
-public:
-    Graf(std::unique_ptr<GrafImplementator> grafImpl){
-        this->impl = std::move(grafImpl);
-    }
-
-    void changeRepr(int repr){
-        // if (repr == 0)
-        //     this->impl.reset(new AdjacencyListImp(*this->impl));
-        // if (repr == 1)
-        //     this->impl.reset(new AdjacencyMatrixImp(*this->impl));
-    }
-
-    void getReptOutput() {
-        // this->impl->printStringRepresetation();
-    }
-
-private:
-    std::unique_ptr<GrafImplementator> impl;
-};
-
-// class GrafFactory {
-// public:
-//     static Graf makeGrafAdjList(EdgesList repr){
-//         return Graf(std::make_unique<AdjacencyListImp>(repr));
-//     }
-//     static Graf makeAdjMatrix(EdgesList){
-//         return Graf(std::make_unique<AdjacencyMatrixImp>());
-//     }
-// };
-
 int main(){
 
     // std::stringstream stream{"A B\nA C\nB D\nC F\nD E\nD F\nE C\n"};
