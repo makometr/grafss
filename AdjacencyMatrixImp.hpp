@@ -1,14 +1,5 @@
 #pragma once
-#include <string>
-#include <iostream>
-#include <vector>
-#include <tuple>
-#include <map>
-#include <algorithm>
-#include <sstream>
-#include <iterator>
-#include <cassert>
-
+#include "meta.hpp"
 
 // Матрица смежности
 class AdjacencyMatrixImp {

@@ -1,22 +1,5 @@
 #pragma once
-
-#include <iostream>
-#include <string>
-#include <vector>
-#include <tuple>
-#include <map>
-#include <algorithm>
-#include <sstream>
-#include <iterator>
-#include <cassert>
-#define assertm(exp, msg) assert(((void)msg, exp))
-
-using VertexName = std::string;
-using VertexID = int;
-using EdgeWeight = int;
-using Edge = std::tuple<VertexName, VertexName, EdgeWeight>;
-using SemiEdge = std::pair<VertexName, EdgeWeight>;
-using ListOfVertices = std::vector<VertexName>;
+#include "meta.hpp"
 
 // Список рёбер
 class EdgesList {

@@ -1,14 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <stack>
-#include <tuple>
-#include <memory>
-#include <list>
-#include <map>
-#include <sstream>
-#include <algorithm>
-#include <iomanip>
+#include "meta.hpp"
 
 #include "EdgesList.hpp"
 #include "AdjacencyListImp.hpp"
