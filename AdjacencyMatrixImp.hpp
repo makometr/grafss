@@ -4,7 +4,7 @@
 // Матрица смежности
 class AdjacencyMatrixImp {
 private:
-    std::map<VertexName, int> VertexIds; // Хранение пар имя - id
+    std::map<Vertex, int> VertexIds; // Хранение пар имя - id
     // std::vector<std::pair<VertexName, std::int>> VertexIds; // можно ещё так
     std::vector<std::vector<int>> AdjMatrix; // Сама матрица
 

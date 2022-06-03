@@ -9,6 +9,9 @@
 #include <algorithm>
 #include <iterator>
 #include <vector>
+#include <queue>
+#include <unordered_set>
+#include <unordered_map>
 #include <tuple>
 #include <map>
 #include <list>
@@ -16,9 +19,13 @@
 
 #define assertm(exp, msg) assert(((void)msg, exp))
 
-using VertexName = std::string;
 using VertexID = int;
+
+using Vertex = std::string;
 using EdgeWeight = int;
-using Edge = std::tuple<VertexName, VertexName, EdgeWeight>;
-using SemiEdge = std::pair<VertexName, EdgeWeight>;
-using ListOfVertices = std::vector<VertexName>;
+using Edge = std::tuple<Vertex, Vertex, EdgeWeight>;
+
+using SemiEdge = std::pair<Vertex, EdgeWeight>;
+using VerticesVector = std::vector<Vertex>;
+using EdgesVector = std::vector<Edge>;
+
